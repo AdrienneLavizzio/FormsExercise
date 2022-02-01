@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <forms>
+        <fieldset>
+        <legend>Costumer Experience Survey</legend>
+        <label for="store number">Store Number</label>
+         <select name="store number" id="store number">
+            <option value="selectStore" hidden>Select A Store</option>
+            <option value="3109">3109</option>
+            <option value="2421">2421</option>
+            <option value="5357">5357</option>
+        </select>
+        <div>
+        <!--Date Visted-->
+        <fieldset>
+            <legend>When you visited:</legend>
+            <label for="date visited">Date Visted</label>
+            <input type="date" id="date" value="2022">
+            <br>
+            <label for="time">Time</label>
+            <input type="time" id="time">
+
+        </fieldset>
+    <div>
+        <!--Full Name-->
+    <label for="Full Name">Full Name</label>
+     <input placeholder="Name">
+     <br>
+        <!--Email-->
+    <label for="email">Email</label>
+    <input placeholder="Email">
+    <br>
+        <!--Satisfaction of the visit-->
+        <fieldset>
+        <legend>How would you rate your level of satisfaction with your visit?</legend>
+        <input type="radio" id="satisfied" name="sl">
+        <label for="satisfied">Satisfied</label>
+        <br>
+        
+        <input type="radio" id="neither satisfied nor dissatisfied" name="sl"checked>
+         <label for="neither satisfied nor dissatisfied">Neither Satisfied nor Dissatisfied</label>
+        <br>
+        <input type="radio" id="dissatisfied" name="sl">
+        <label for="dissatisfied">Dissatisfied</label>
+    
+        <!--Experience-->
+        </fieldset>
+           <label for="experience">Tell us about you experience:</label>
+           <br>
+           <textarea name="experience" id="experience" cols="20" rows="2"></textarea>
+           <br>
+        <!--Times Visted-->
+           <label for="last month">Times visited in the last month:</label>
+           <br>
+           
+           <input type="number" id="last month" name="last month" min="1" max="30">
+           <br>
+           <!--Checkbox-->
+           <input type="checkbox" id="agree" required>
+           <label for="agree">Please check the box if you would be willing to be contacted about your experience</label>
+           <br>
+          <label for="password">Password:</label>
+          <input type="password" name="password "id="password" pattern=".{5,10}" title="Please enter a password that is 5 to 10 characters in length">
+          <br>
+          <input type="reset" value="Reset The Form">
+          <input type="submit">
+           
+        </fieldset>
+    </forms>
+</body>
+</html>
